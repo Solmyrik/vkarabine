@@ -1,0 +1,155 @@
+.footer {
+  background-color: $blue;
+  padding: 60px 0px;
+  &__container {
+  }
+
+  &__pc {
+  }
+
+  &__logo {
+  }
+}
+.pc-footer {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 21px;
+  }
+
+  &__column {
+  }
+
+  &__text {
+    margin-top: 32px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    color: $gray-bg;
+    width: 260px;
+    margin-bottom: 57px;
+  }
+
+  &__person {
+    b {
+      font-family: Jost;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 120%;
+      color: $white;
+    }
+    p {
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 120%;
+      color: $gray-bg;
+      width: 260px;
+    }
+  }
+
+  &__title {
+    color: $white;
+    margin-bottom: 40px;
+  }
+
+  &__menu {
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+    color: $gray-bg;
+    font-family: 'Made';
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    transition: all 0.3s;
+    &:hover {
+      color: $white;
+    }
+    &_s {
+      color: $gray-bg;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 120%;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    &_n {
+      color: $gray-bg;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 120%;
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  &__left {
+  }
+  .top-header__link {
+    color: $white;
+  }
+  .top-header__item {
+    &::before {
+      background-color: $white;
+    }
+  }
+  .top-header__link {
+    &:hover {
+      text-decoration: underline;
+      svg {
+        path {
+          stroke: $white;
+        }
+      }
+    }
+  }
+}
+.pc-footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+  color: $gray-bg;
+  a {
+    color: $gray-bg;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.top-header {
+  &__menu {
+  }
+
+  &__list {
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+}

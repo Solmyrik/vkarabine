@@ -1,0 +1,306 @@
+.header {
+  position: relative;
+  &__container {
+  }
+
+  &__top {
+    padding: 17px 30px;
+  }
+}
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__left {
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+
+  &__menu {
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+  }
+
+  &__item {
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 15px;
+      background-color: $gray;
+      right: -14.5px;
+      top: 2px;
+    }
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    transition: color 0.3s;
+    svg {
+      path {
+        transition: all 0.3s;
+      }
+    }
+    &:hover {
+      color: $blue;
+      svg {
+        path {
+          stroke: $blue;
+        }
+      }
+    }
+  }
+}
+.body-header-fixed {
+  margin-bottom: 83px;
+}
+
+.body-header {
+  background-color: $white;
+  box-shadow: 0px 6px 10px -79px rgba(0, 0, 0, 0.11);
+  border-radius: 10px;
+  position: fixed;
+  max-width: 1320px;
+  z-index: 5;
+  width: 100%;
+  transition: all 0.3s;
+  &.hide {
+    display: none;
+  }
+  &__wrapper {
+    padding: 26px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+  }
+
+  &__languages {
+    display: flex;
+    gap: 20px;
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__language {
+    position: relative;
+    cursor: pointer;
+    &._active {
+      cursor: auto;
+      color: $accent;
+      &::before {
+        content: '';
+        position: absolute;
+        height: 15px;
+        width: 1px;
+        background-color: $accent;
+        bottom: 0;
+        right: -10px;
+      }
+    }
+  }
+}
+.menu {
+  &__body {
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+  }
+
+  &__item {
+    position: relative;
+    &:hover {
+      .menu__link {
+        color: $accent;
+        svg {
+          transform: rotate(180deg);
+          path {
+            stroke: $accent;
+          }
+        }
+      }
+      .sub-menu {
+        display: flex;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-size: 15px;
+    font-weight: 500;
+    color: $black;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__sub {
+  }
+}
+.sub-menu {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  border: 1px solid rgb(170, 177, 183);
+  border-radius: 20px;
+  height: auto;
+  width: 470px;
+  background-color: $white;
+  top: 65px;
+  left: -20px;
+  &::before {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: -50px;
+    width: 100%;
+    height: 50px;
+  }
+  &_2 {
+    width: 515px;
+  }
+  &_3 {
+    width: 481px;
+  }
+  &_4 {
+    width: 511px;
+  }
+  &_5 {
+    width: 333px;
+  }
+  &_6 {
+    width: 280px;
+  }
+}
+
+.sub-menu {
+  padding: 10px;
+
+  &__wrapper {
+    display: flex;
+    gap: 20px;
+    &_b {
+      flex-direction: column;
+    }
+  }
+  &__list {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    color: $white;
+  }
+
+  &__item {
+    padding: 10px 15px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: $blue;
+      border-radius: 10px;
+      .sub-menu__title,
+      .sub-menu__subtitle {
+        color: $white;
+      }
+    }
+    &_o {
+      &:hover {
+        background-color: #e0913e;
+      }
+    }
+    &_r {
+      &:hover {
+        background-color: #df5d5d;
+      }
+    }
+  }
+
+  &__iteme {
+    padding: 10px 15px;
+    &:hover {
+      cursor: pointer;
+      background-color: $blue;
+      border-radius: 10px;
+      .sub-menu__title,
+      .sub-menu__subtitle {
+        color: $white;
+      }
+    }
+  }
+
+  &__link {
+  }
+
+  &__title {
+    font-family: 'Made';
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 120%;
+    margin-bottom: 3px;
+    color: $black;
+  }
+
+  &__subtitle {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    color: $gray;
+  }
+
+  &__content {
+    flex: 0 0 210px;
+    background-color: #eaeaec;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  &__img {
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  &__text {
+    margin-top: 15px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+  }
+}

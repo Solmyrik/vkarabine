@@ -1,0 +1,160 @@
+$minwidth: 320px;
+$mw: 1230px;
+$md1: $mw + 12px;
+$md14: 1040px;
+$md2: 992px;
+$md3: 767px;
+$md4: 479.98px;
+$maxWidth: 1920px;
+$maxWidthContainer: 1500;
+
+//======================================================================================================================
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  img {
+    display: none;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Made';
+  src: local('☺'), url('../fonts/made.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: local('☺'), url('../fonts/BebasNeue-Bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+//color
+$accent: #0234c7;
+$blue: #2452cc;
+$black: #1d1e20;
+$gray: #42494f;
+$white: #ffffff;
+$light: #e8eeff;
+$light-blue: #eaeaec;
+$light-gray: #aab1b7;
+$red: #c75757;
+$gray-bg: #e6e6e6;
+
+._par {
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+._par-s {
+  font-family: 'Inter';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+._h2 {
+  font-family: 'Bebas';
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 120%;
+  color: $black;
+}
+
+._h5 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  font-family: 'Made';
+}
+._btn {
+  width: 100%;
+  height: 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  background-color: $blue;
+  border-radius: 7px;
+
+  font-family: 'Made';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+  transition: all 0.3s;
+
+  &:hover {
+    background-color: $accent;
+  }
+
+  &._secondary {
+    border: 1px solid rgb(2, 52, 199);
+    color: $accent;
+    background-color: $white;
+    &:hover {
+      border: 1px solid $accent;
+      background-color: $accent;
+      color: $white;
+    }
+  }
+}
+
+._margin-b {
+  margin-bottom: 140px !important;
+}
+
+.to-top {
+  position: fixed;
+  left: 25px;
+  bottom: 100px;
+  border: 1.5px solid rgb(2, 52, 199);
+  /* white */
+  background: rgb(255, 255, 255);
+  opacity: 0.5;
+  width: 70px;
+  height: 70px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: all 0.3s;
+  &.active {
+    display: flex;
+  }
+  svg {
+    g {
+      transition: all 0.3s;
+      path {
+        transition: all 0.3s;
+      }
+    }
+  }
+  &:hover {
+    background-color: $accent;
+    opacity: 1;
+    svg {
+      g {
+        opacity: 1;
+        path {
+          stroke: $white;
+        }
+        // g {
+        //   path {
+        //     stroke: $white;
+        //   }
+        // }
+      }
+    }
+  }
+}

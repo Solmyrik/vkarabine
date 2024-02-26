@@ -1,0 +1,34 @@
+.intro {
+  margin-bottom: 140px;
+  &__carusel {
+  }
+}
+.carusel-intro {
+  margin-top: 95px;
+  &__block {
+    min-height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+  }
+
+  &__slide {
+    //  flex: 0 0 25%;
+    img {
+      width: 100%;
+      border-radius: 8.5px;
+    }
+  }
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+.swiper__container {
+  margin: 0;
+}
