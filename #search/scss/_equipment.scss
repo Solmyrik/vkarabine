@@ -13,11 +13,12 @@
   &__sticky {
     position: sticky;
 
-    top: 0px;
+    top: 50px;
     left: 0;
   }
 
   &__title {
+    margin-bottom: 25px;
   }
 
   &__text {

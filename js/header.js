@@ -116,9 +116,9 @@ window.addEventListener('scroll', function () {
   const headerBody = document.querySelector('.body-header');
 
   if (position > 30) {
-    headerBody.style.top = '20px';
+    headerBody.style.transform = 'translate(0, -20px)';
   } else {
-    headerBody.style.top = 'auto';
+    headerBody.style.transform = 'translate(0, 0px)';
   }
 });
 
