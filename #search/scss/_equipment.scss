@@ -1,20 +1,39 @@
 .equipment {
   position: relative;
   margin-bottom: 140px;
+  @media (max-width: $tablet) {
+    margin-bottom: 117px;
+  }
   &__container {
     display: flex;
     justify-content: space-between;
     overflow: visible;
+    @media (max-width: 1360px) {
+      gap: 36px;
+    }
+    @media (max-width: $tablet) {
+      display: block;
+    }
   }
 
   &__content {
     flex: 0 1 367px;
+    @media (max-width: 1360px) {
+      flex: 0 1 307px;
+    }
+    @media (max-width: $tablet) {
+      margin-bottom: 37px;
+    }
   }
   &__sticky {
     position: sticky;
 
     top: 50px;
     left: 0;
+    @media (max-width: $tablet) {
+      position: relative;
+      top: 0;
+    }
   }
 
   &__title {
@@ -22,6 +41,9 @@
   }
 
   &__text {
+    @media (max-width: $tablet) {
+      max-width: 570px;
+    }
   }
 
   &__images {
@@ -29,6 +51,13 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+    @media (max-width: $tablet) {
+      width: 650px;
+    }
+    @media (max-width: $mobile) {
+      width: 100%;
+      gap: 15px;
+    }
   }
 
   &__image {
@@ -38,6 +67,13 @@
       width: 100%;
       height: 250px;
       border-radius: 10px;
+      @media (max-width: $tablet) {
+        width: 315px;
+      }
+      @media (max-width: $mobile) {
+        width: 100%;
+        height: 100%;
+      }
     }
     &::before {
       content: '';
@@ -72,5 +108,10 @@
     text-transform: uppercase;
     font-family: 'Made';
     transition: opacity 0.3s;
+    @media (max-width: $mobile) {
+      font-size: 16px;
+      left: 10px;
+      top: 25px;
+    }
   }
 }

@@ -2,6 +2,16 @@
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 1360px) {
+    padding-top: 50px;
+  }
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+    display: block;
+  }
+  @media (max-width: $mobile) {
+    padding-top: 30px;
+  }
   &__title {
     font-family: 'Bebas';
     font-size: 100px;
@@ -9,10 +19,24 @@
     line-height: 120%;
     color: $black;
     flex: 0 1 780px;
+    @media (max-width: 1360px) {
+      font-size: 66px;
+      flex: 0 1 520px;
+    }
+    @media (max-width: $tablet) {
+      max-width: 600px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 44px;
+      margin-bottom: 25px;
+    }
   }
 
   &__content {
     flex: 0 1 351px;
+    @media (max-width: $tablet) {
+      max-width: 600px;
+    }
   }
 
   &__par {
@@ -20,5 +44,11 @@
   }
 
   &__btn {
+    @media (max-width: $tablet) {
+      width: 308px;
+    }
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
   }
 }

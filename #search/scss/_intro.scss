@@ -1,41 +1,45 @@
 .intro {
   margin-bottom: 140px;
+  @media (max-width: $tablet) {
+    margin-bottom: 113px;
+  }
+  @media (max-width: $mobile) {
+    margin-bottom: 100px;
+  }
   &__carusel {
   }
 }
 .carusel-intro {
   margin-top: 95px;
+  position: relative;
+  @media (max-width: $mobile) {
+    margin-top: 40px;
+  }
   &__block {
     min-height: 0;
     overflow: hidden;
     border-radius: 10px;
-    display: flex;
     /* Анимация бегущей строки */
   }
 
   &__wrapper {
-    display: flex;
-    width: 3360px;
-    min-width: 3360px;
-    // width: 2640px;
-    // min-width: 2640px;
-    animation: marquee 16s linear infinite;
-    justify-content: space-between;
-    &:hover {
-      animation-play-state: paused;
-    }
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
   }
 
-  span {
-    width: 1320px;
-    display: flex;
-    gap: 20px;
+  &__slide {
+    img {
+      width: 100%;
+      @media (max-width: 1360px) {
+        height: 293px;
+      }
+    }
   }
 
   //  flex: 0 0 25%;
 
   img {
-    width: calc(25% - 10px);
     border-radius: 8.5px;
   }
 }

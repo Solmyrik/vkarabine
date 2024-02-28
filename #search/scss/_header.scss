@@ -1,10 +1,17 @@
 .header {
+  @media (max-width: 1360px) {
+    display: none;
+  }
+
   position: relative;
   &__container {
   }
 
   &__top {
     padding: 17px 30px;
+    @media (max-width: 1360px) {
+      padding: 17px 0px;
+    }
   }
 }
 .top-header {
@@ -18,6 +25,10 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 120%;
+    @media (max-width: 1360px) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__menu {
@@ -86,22 +97,36 @@
   width: 100%;
   transition: transform 0.3s;
   @media (max-width: 1360px) {
-    max-width: calc(100vw - 30px);
+    max-width: calc(100vw);
+    border-radius: 0px;
+    left: 0;
   }
   &.hide {
     display: none;
+  }
+  &.scroll {
+    transform: translate(0, -20px);
+    @media (max-width: 1360px) {
+      transform: translate(0, -70px);
+    }
   }
   &__wrapper {
     padding: 26px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 1360px) {
+      padding: 26px 15px;
+    }
   }
 
   &__logo {
   }
 
   &__menu {
+    @media (max-width: 1360px) {
+      display: none;
+    }
   }
 
   &__languages {
@@ -110,6 +135,9 @@
     font-family: 'Inter';
     font-size: 14px;
     font-weight: 400;
+    @media (max-width: 1360px) {
+      margin-right: 100px;
+    }
   }
 
   &__language {
@@ -308,5 +336,67 @@
     font-size: 14px;
     font-weight: 400;
     line-height: 120%;
+  }
+}
+
+.header__burger {
+  @media (max-width: 1360px) {
+    display: block;
+    position: absolute;
+    width: 22px;
+    height: 14px;
+    cursor: pointer;
+    z-index: 10;
+    right: 29px;
+    top: 40px;
+    transform: translate(0, -50%);
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: $gray-bg;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+
+    span {
+      transition: 0.3s all;
+      top: calc(50% - 1px);
+      left: 0px;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: $black;
+
+      &:first-child {
+        top: 0px;
+      }
+
+      &:last-child {
+        top: auto;
+        bottom: 0px;
+      }
+    }
+
+    &._active {
+      span {
+        transform: scale(0);
+        background-color: $black;
+
+        &:first-child {
+          transform: rotate(-45deg);
+          top: 8px;
+        }
+
+        &:last-child {
+          transform: rotate(45deg);
+          bottom: 8px;
+        }
+      }
+    }
   }
 }

@@ -2,8 +2,8 @@ $minwidth: 320px;
 $mw: 1230px;
 $md1: $mw + 12px;
 $md14: 1040px;
-$md2: 992px;
-$md3: 767px;
+$tablet: 992px;
+$mobile: 767px;
 $md4: 479.98px;
 $maxWidth: 1920px;
 $maxWidthContainer: 1500;
@@ -66,6 +66,9 @@ $gray-bg: #e6e6e6;
   font-weight: 700;
   line-height: 120%;
   color: $black;
+  @media (max-width: 1360px) {
+    font-size: 44px;
+  }
 }
 
 ._h5 {
@@ -111,6 +114,12 @@ $gray-bg: #e6e6e6;
 
 ._margin-b {
   margin-bottom: 140px !important;
+  @media (max-width: 1360px) {
+    margin-bottom: 120px !important;
+  }
+  @media (max-width: $mobile) {
+    margin-bottom: 100px !important;
+  }
 }
 
 .to-top {
