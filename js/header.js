@@ -110,6 +110,14 @@ subMenuItems.forEach((element) => {
   });
 });
 
+const headerPhone = document.querySelector('.header__mob-phone');
+const headerPhoneMenu = document.querySelector('.header-menu-mob');
+if (headerPhone) {
+  headerPhone.addEventListener('click', (e) => {
+    headerPhoneMenu.classList.toggle('active');
+  });
+}
+
 window.addEventListener('scroll', function () {
   const position = window.pageYOffset;
 
