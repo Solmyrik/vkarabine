@@ -1128,9 +1128,6 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 @media (max-width: 1360px) {
@@ -1186,6 +1183,7 @@ body.lock {
 }
 
 .welcome__content {
+  padding-top: 14px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 351px;
           flex: 0 1 351px;

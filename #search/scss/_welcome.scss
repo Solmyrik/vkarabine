@@ -2,7 +2,7 @@
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  // align-items: center;
   @media (max-width: 1360px) {
     padding-top: 50px;
   }
@@ -34,6 +34,7 @@
   }
 
   &__content {
+    padding-top: 14px;
     flex: 0 1 351px;
     @media (max-width: $tablet) {
       max-width: 600px;
