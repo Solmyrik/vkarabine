@@ -393,7 +393,7 @@ body.lock {
 }
 
 .top-header__item::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 1px;
   height: 15px;
@@ -480,8 +480,8 @@ body.lock {
 }
 
 .body-header.scroll {
-  -webkit-transform: translate(0, -20px);
-          transform: translate(0, -20px);
+  -webkit-transform: translate(0, -22px);
+          transform: translate(0, -22px);
 }
 
 @media (max-width: 1360px) {
@@ -557,7 +557,7 @@ body.lock {
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 14px;
   font-weight: 400;
 }
@@ -593,7 +593,7 @@ body.lock {
 }
 
 .body-header__language._active::before {
-  content: '';
+  content: "";
   position: absolute;
   height: 15px;
   width: 1px;
@@ -642,7 +642,7 @@ body.lock {
 .menu__link {
   position: relative;
   cursor: pointer;
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 15px;
   font-weight: 500;
   color: #1d1e20;
@@ -669,7 +669,7 @@ body.lock {
 }
 
 .sub-menu::before {
-  content: '';
+  content: "";
   position: absolute;
   opacity: 0;
   left: 0;
@@ -770,7 +770,7 @@ body.lock {
 }
 
 .sub-menu__title {
-  font-family: 'Made';
+  font-family: "Made";
   text-transform: uppercase;
   font-size: 20px;
   font-weight: 500;
@@ -861,7 +861,7 @@ body.lock {
 
 @media (max-width: 1360px) {
   .header__burger::before {
-    content: '';
+    content: "";
     position: absolute;
     width: 50px;
     height: 50px;
@@ -1128,6 +1128,9 @@ body.lock {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (max-width: 1360px) {
@@ -1150,7 +1153,7 @@ body.lock {
 }
 
 .welcome__title {
-  font-family: 'Bebas';
+  font-family: "Bebas";
   font-size: 100px;
   font-weight: 700;
   line-height: 120%;
@@ -1572,7 +1575,7 @@ body.lock {
 }
 
 .cards__text {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .cards__btn {
@@ -1757,6 +1760,9 @@ body.lock {
 
 .cards__icon img {
   width: 100%;
+  height: 140px;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 10px;
 }
 
@@ -1857,6 +1863,12 @@ body.lock {
   gap: 20px;
 }
 
+@media (max-width: 767px) {
+  .news__items {
+    display: block;
+  }
+}
+
 .news__item {
   cursor: pointer;
   -webkit-box-flex: 0;
@@ -1900,6 +1912,7 @@ body.lock {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 100%;
             flex: 0 1 100%;
+    display: block;
   }
 }
 
@@ -1925,16 +1938,24 @@ body.lock {
   height: 310px;
   width: 100%;
   border-radius: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 767px) {
   .news__img img {
-    height: 340px;
+    height: auto;
   }
 }
 
 .news__name {
   color: #1d1e20;
+}
+
+@media (max-width: 767px) {
+  .news__name {
+    margin-bottom: 28px;
+  }
 }
 
 .news__top {
@@ -1953,6 +1974,12 @@ body.lock {
           justify-content: space-between;
 }
 
+@media (max-width: 767px) {
+  .news__top {
+    display: block;
+  }
+}
+
 .news__date {
   font-size: 14px;
   font-weight: 400;
@@ -1965,6 +1992,12 @@ body.lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+}
+
+@media (max-width: 767px) {
+  .news__par {
+    margin-bottom: 40px;
+  }
 }
 
 .news__link {
@@ -2095,7 +2128,7 @@ body.lock {
 @media (max-width: 992px) {
   .pc-footer__text {
     width: 100%;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-size: 14px;
     font-weight: 400;
     line-height: 120%;
@@ -2173,7 +2206,7 @@ body.lock {
 
 .pc-footer__link {
   color: #e6e6e6;
-  font-family: 'Made';
+  font-family: "Made";
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 500;
@@ -2224,6 +2257,12 @@ body.lock {
         -ms-flex-align: start;
             align-items: start;
   }
+}
+
+.pc-footer__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 224px;
+          flex: 0 1 224px;
 }
 
 @media (max-width: 767px) {

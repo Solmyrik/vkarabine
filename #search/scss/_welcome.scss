@@ -2,6 +2,7 @@
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   @media (max-width: 1360px) {
     padding-top: 50px;
   }
@@ -13,7 +14,7 @@
     padding-top: 30px;
   }
   &__title {
-    font-family: 'Bebas';
+    font-family: "Bebas";
     font-size: 100px;
     font-weight: 700;
     line-height: 120%;

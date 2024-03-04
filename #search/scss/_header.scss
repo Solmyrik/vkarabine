@@ -62,7 +62,7 @@
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 1px;
       height: 15px;
@@ -131,7 +131,7 @@
     display: none;
   }
   &.scroll {
-    transform: translate(0, -20px);
+    transform: translate(0, -22px);
     @media (max-width: 1360px) {
       transform: translate(0, -70px);
     }
@@ -177,7 +177,7 @@
   &__languages {
     display: flex;
     gap: 20px;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-size: 14px;
     font-weight: 400;
     @media (max-width: 1360px) {
@@ -201,7 +201,7 @@
       cursor: auto;
       color: $accent;
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         height: 15px;
         width: 1px;
@@ -244,7 +244,7 @@
   &__link {
     position: relative;
     cursor: pointer;
-    font-family: 'Inter';
+    font-family: "Inter";
     font-size: 15px;
     font-weight: 500;
     color: $black;
@@ -268,7 +268,7 @@
   top: 65px;
   left: -20px;
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     opacity: 0;
     left: 0;
@@ -353,7 +353,7 @@
   }
 
   &__title {
-    font-family: 'Made';
+    font-family: "Made";
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 500;
@@ -429,7 +429,7 @@
     }
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       width: 50px;
       height: 50px;
