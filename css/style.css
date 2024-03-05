@@ -1456,12 +1456,12 @@ body.lock {
 @media (max-width: 767px) {
   .equipment__image img {
     width: 100%;
-    height: 100%;
+    height: 134px;
   }
 }
 
 .equipment__image::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1491,7 +1491,7 @@ body.lock {
   line-height: 120%;
   color: #ffffff;
   text-transform: uppercase;
-  font-family: 'Made';
+  font-family: "Made";
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
 }
@@ -2013,6 +2013,7 @@ body.lock {
 @media (max-width: 767px) {
   .news__top {
     display: block;
+    height: auto;
   }
 }
 
