@@ -10,6 +10,12 @@
 
   &__left {
     flex: 0 1 308px;
+    &_2 {
+      flex: 0 1 492px;
+    }
+    @media (max-width: $tablet) {
+      flex: auto;
+    }
   }
 
   &__title {
@@ -28,6 +34,9 @@
 
   &__right {
     flex: 0 1 492px;
+    @media (max-width: $tablet) {
+      flex: auto;
+    }
   }
 }
 
@@ -114,7 +123,15 @@
       margin-top: 34px;
     }
     a {
+      // display: block;
+      // margin-top: 20px;
     }
+    &_bottom {
+      p {
+        margin-bottom: 20px;
+      }
+    }
+
     span {
       font-family: Jost;
       font-size: 16px;
@@ -123,6 +140,13 @@
       color: $black;
       padding-right: 5px;
       padding-top: 33px;
+    }
+    &.active {
+      &_bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
     }
   }
 }

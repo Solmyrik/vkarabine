@@ -22,7 +22,13 @@
     span {
       color: $accent;
     }
+    b {
+      color: #e0913e;
+    }
     flex: 0 1 780px;
+    &_3 {
+      flex: 0 1 511px;
+    }
     @media (max-width: 1360px) {
       font-size: 66px;
       flex: 0 1 520px;

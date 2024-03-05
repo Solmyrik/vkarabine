@@ -101,6 +101,9 @@ $gray-bg: #e6e6e6;
   text-transform: uppercase;
   font-family: "Made";
 }
+mark {
+  all: initial;
+}
 
 ._btn {
   width: 100%;
@@ -161,6 +164,7 @@ $gray-bg: #e6e6e6;
   cursor: pointer;
   border-radius: 50%;
   transition: all 0.3s;
+  z-index: 1000;
   &.active {
     display: flex;
   }
