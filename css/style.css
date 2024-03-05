@@ -3295,6 +3295,12 @@ body.lock {
   margin-bottom: 50px;
 }
 
+@media (max-width: 767px) {
+  .certificates__text {
+    margin-bottom: 40px;
+  }
+}
+
 .certificates__right {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 492px;
