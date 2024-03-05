@@ -3008,6 +3008,12 @@ body.lock {
   }
 }
 
+@media (max-width: 767px) {
+  .item-model__reg {
+    padding-left: 0;
+  }
+}
+
 .item-model__slide {
   height: 100%;
   width: 100%;
