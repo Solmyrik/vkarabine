@@ -2678,6 +2678,7 @@ body.lock {
   font-family: "Made";
   color: #0234c7;
   padding-right: 50px;
+  text-transform: uppercase;
 }
 
 .advantages-mob__plus {
