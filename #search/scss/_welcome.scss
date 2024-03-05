@@ -19,6 +19,9 @@
     font-weight: 700;
     line-height: 120%;
     color: $black;
+    span {
+      color: $accent;
+    }
     flex: 0 1 780px;
     @media (max-width: 1360px) {
       font-size: 66px;
@@ -36,6 +39,9 @@
   &__content {
     padding-top: 14px;
     flex: 0 1 351px;
+    &_2 {
+      flex: 0 1 391px;
+    }
     @media (max-width: $tablet) {
       max-width: 600px;
     }

@@ -1,0 +1,49 @@
+.rotor {
+  &__container {
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: $tablet) {
+      gap: 38px;
+    }
+  }
+
+  &__left {
+    height: 100%;
+    flex: 0 0 250px;
+    img {
+      width: 100%;
+    }
+    @media (max-width: $mobile) {
+      display: none;
+    }
+  }
+
+  &__right {
+    flex: 0 1 477px;
+    margin-right: 177px;
+    @media (max-width: $laptop) {
+      margin-right: 74px;
+      flex: 0 1 415px;
+    }
+    @media (max-width: $tablet) {
+      flex: 1 1 auto;
+      margin-right: 0;
+    }
+  }
+
+  &__title {
+    margin-bottom: 24px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    @media (max-width: $mobile) {
+      gap: 30px;
+    }
+  }
+}

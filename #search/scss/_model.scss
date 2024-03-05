@@ -1,0 +1,310 @@
+.model {
+  position: relative;
+  background-color: #f6f7fa;
+  z-index: 100;
+  &__container {
+    position: relative;
+    overflow: visible;
+  }
+
+  &__top {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 50px;
+    @media (max-width: $laptop) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    @media (max-width: $laptop) {
+      margin-bottom: 121px;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 150px;
+    }
+  }
+
+  &__triggers {
+    position: absolute;
+
+    left: 350px;
+    height: 100%;
+    @media (max-width: $laptop) {
+      left: 15px;
+      top: 98px;
+    }
+    @media (max-width: $mobile) {
+      left: 10px;
+      top: 78px;
+    }
+  }
+
+  &__sticky {
+    position: sticky;
+    z-index: 20;
+    //  position: sticky;
+    top: 32px;
+    display: flex;
+    height: 43px;
+    gap: 20px;
+    @media (max-width: $mobile) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-right: 5px;
+    }
+  }
+
+  &__trigger {
+    top: 0;
+    cursor: pointer;
+    width: 159px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $white;
+    font-family: "Made";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    color: $black;
+    border-radius: 10px;
+    &.active {
+      background-color: $accent;
+      color: $white;
+    }
+    @media (max-width: $mobile) {
+      flex: 0 1 calc(50% - 10px);
+    }
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+  }
+
+  &__item {
+  }
+}
+
+.active {
+}
+
+.item-model {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: $light-blue;
+  @media (max-width: $laptop) {
+    width: 100vw;
+    transform: translate(-16px, 0);
+    border-radius: 0px;
+    padding: 30px 19px;
+  }
+  @media (max-width: $tablet) {
+    transform: translate(-10px, 0);
+    padding: 30px 10px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 40px;
+    @media (max-width: $tablet) {
+      flex-direction: column-reverse;
+      gap: 40px;
+    }
+  }
+
+  &__left {
+    position: relative;
+    @media (max-width: $tablet) {
+      width: 100vw;
+      transform: translate(-10px, 0);
+    }
+  }
+
+  &__slider {
+    width: 560px;
+    height: 320px;
+    overflow: hidden;
+    border-radius: 10px;
+    @media (max-width: $laptop) {
+      width: 424px;
+      height: 340px;
+    }
+    @media (max-width: $tablet) {
+      width: 100%;
+      border-radius: 0;
+    }
+  }
+
+  &__slider-1 {
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-flow: column;
+    height: 320px;
+    @media (max-width: $laptop) {
+      height: 340px;
+    }
+  }
+  .cards-padingation {
+    @media (max-width: $laptop) {
+      bottom: 20px;
+    }
+  }
+
+  &__slide {
+    height: 100%;
+    width: 100%;
+    img {
+      width: 100%;
+      border-radius: 10px;
+      height: 100%;
+      object-fit: cover;
+      @media (max-width: $tablet) {
+        border-radius: 0;
+      }
+    }
+  }
+
+  &__right {
+    flex: 0 0 619px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: $laptop) {
+      flex: 0 1 492px;
+    }
+    @media (max-width: $tablet) {
+      flex: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 30px;
+    @media (max-width: $laptop) {
+      margin-bottom: 20px;
+    }
+    @media (max-width: $tablet) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__text {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    span {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 120%;
+      font-family: "Made";
+      color: $accent;
+      margin-right: 3px;
+    }
+    @media (max-width: $tablet) {
+      gap: 30px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    gap: 30px;
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  &__btn {
+    @media (max-width: $tablet) {
+      width: 236px;
+    }
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
+  }
+
+  &__bottom {
+  }
+
+  &__name {
+    margin-bottom: 20px;
+  }
+
+  &__table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-flow: repeat(2, 1fr);
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-auto-flow: repeat(4, 1fr);
+    }
+  }
+
+  &__tb {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    &:nth-child(1) {
+      border: 1px solid rgb(170, 177, 183);
+      @media (max-width: $tablet) {
+        border: 1px solid rgb(170, 177, 183);
+        border-radius: 10px 10px 0px 0px;
+      }
+    }
+    &:nth-child(2) {
+      border-top: 1px solid rgb(170, 177, 183);
+      border-right: 1px solid rgb(170, 177, 183);
+      border-bottom: 1px solid rgb(170, 177, 183);
+      border-radius: 0px 10px 0px 0px;
+      @media (max-width: $tablet) {
+        border-radius: 0px 0px 0px 0px;
+        border-top: 0px solid rgb(170, 177, 183);
+        border-right: 1px solid rgb(170, 177, 183);
+        border-left: 1px solid rgb(170, 177, 183);
+        border-bottom: 1px solid rgb(170, 177, 183);
+      }
+    }
+    &:nth-child(3) {
+      border-right: 1px solid rgb(170, 177, 183);
+      border-bottom: 1px solid rgb(170, 177, 183);
+      border-left: 1px solid rgb(170, 177, 183);
+      border-radius: 0px 0px 0px 10px;
+      @media (max-width: $tablet) {
+        border-radius: 0px 0px 0px 0px;
+      }
+    }
+    &:nth-child(4) {
+      border-right: 1px solid rgb(170, 177, 183);
+      border-bottom: 1px solid rgb(170, 177, 183);
+      border-radius: 0px 0px 10px 0px;
+      @media (max-width: $tablet) {
+        border-left: 1px solid rgb(170, 177, 183);
+        border-radius: 0px 0px 10px 10px;
+      }
+    }
+    &.active {
+      color: $accent;
+      font-weight: 500;
+    }
+  }
+
+  &__key {
+  }
+
+  &__value {
+  }
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}

@@ -1,0 +1,39 @@
+.intro-img {
+  margin-top: 55px;
+  @media (max-width: $mobile) {
+    margin-top: 40px;
+  }
+  &__slider {
+    overflow: hidden;
+    width: 100%;
+    @media (max-width: $laptop) {
+      width: 100vw;
+      transform: translate(-15px, 0);
+    }
+    @media (max-width: $mobile) {
+      transform: translate(-10px, 0);
+    }
+  }
+
+  &__wrapper {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+  }
+
+  &__slide {
+    flex: 0 0 100%;
+    img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      @media (max-width: $laptop) {
+        border-radius: 0px;
+      }
+    }
+  }
+}
+
+.dop__title {
+  margin-bottom: 50px;
+}

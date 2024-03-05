@@ -1,5 +1,6 @@
 $minwidth: 320px;
 $mw: 1230px;
+$laptop: 1360px;
 $md1: $mw + 12px;
 $md14: 1040px;
 $tablet: 992px;
@@ -19,18 +20,24 @@ $maxWidthContainer: 1500;
     display: none;
   }
 }
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 @font-face {
-  font-family: 'Made';
-  src: local('☺'), url('../fonts/made.otf') format('opentype');
+  font-family: "Made";
+  src: local("☺"), url("../fonts/made.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Bebas';
-  src: local('☺'), url('../fonts/BebasNeue-Bold.ttf') format('truetype');
+  font-family: "Bebas";
+  src: local("☺"), url("../fonts/BebasNeue-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bebas-400";
+  src: local("☺"), url("../fonts/BebasNeue-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -47,21 +54,21 @@ $red: #c75757;
 $gray-bg: #e6e6e6;
 
 ._par {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 16px;
   font-weight: 400;
   line-height: 130%;
 }
 
 ._par-s {
-  font-family: 'Inter';
+  font-family: "Inter";
   font-size: 14px;
   font-weight: 400;
   line-height: 120%;
 }
 
 ._h2 {
-  font-family: 'Bebas';
+  font-family: "Bebas";
   font-size: 50px;
   font-weight: 700;
   line-height: 120%;
@@ -71,14 +78,30 @@ $gray-bg: #e6e6e6;
   }
 }
 
+._h3 {
+  font-family: "Bebas-400";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+._h4 {
+  font-family: "Made";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 120%;
+  text-transform: uppercase;
+}
+
 ._h5 {
   font-size: 16px;
   font-weight: 500;
   line-height: 120%;
   letter-spacing: 0%;
   text-transform: uppercase;
-  font-family: 'Made';
+  font-family: "Made";
 }
+
 ._btn {
   width: 100%;
   height: 43px;
@@ -89,7 +112,7 @@ $gray-bg: #e6e6e6;
   background-color: $blue;
   border-radius: 7px;
 
-  font-family: 'Made';
+  font-family: "Made";
   font-size: 16px;
   font-weight: 500;
   line-height: 120%;

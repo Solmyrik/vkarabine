@@ -1,0 +1,141 @@
+.advantages {
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 49px;
+  }
+
+  &__body {
+  }
+}
+
+.advantages-pc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  @media (max-width: $tablet) {
+    flex-direction: column;
+  }
+  @media (max-width: $mobile) {
+    display: none;
+  }
+  &__item {
+    background-color: $light-blue;
+    padding: 30px;
+    border-radius: 10px;
+    flex: 0 1 calc(54% - 10px);
+    &:first-child,
+    &:last-child {
+      flex: 0 1 calc(46% - 10px);
+      @media (max-width: $laptop) {
+        flex: 0 1 calc(50% - 10px);
+      }
+    }
+    @media (max-width: $laptop) {
+      flex: 0 1 calc(50% - 10px);
+    }
+  }
+
+  &__title {
+    color: $accent;
+    margin-bottom: 30px;
+    @media (max-width: $laptop) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__text {
+  }
+}
+
+.advantages-mob {
+  display: none;
+  @media (max-width: $mobile) {
+    display: block;
+  }
+}
+.advantages-mob {
+  &__items {
+    width: 100vw;
+    transform: translate(-10px, 0);
+  }
+
+  &__item {
+    box-shadow: -2px -15px 20.6px -15px rgba(0, 0, 0, 0.16);
+    background: rgb(234, 234, 236);
+
+    padding: 20px;
+    &:first-child {
+      border-radius: 10px 10px 0px 0px;
+      box-shadow: none;
+    }
+  }
+
+  &__label {
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    font-family: "Made";
+    color: $accent;
+    padding-right: 50px;
+  }
+
+  &__plus {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    cursor: pointer;
+    right: 20px;
+    top: 50%;
+    border-radius: 6px;
+    background-color: $white;
+    border: 2px solid rgb(2, 52, 199);
+    transform: translate(50%, -50%);
+    transition: all 0.3s;
+    &::before {
+      right: 50%;
+      top: 50%;
+      content: "";
+      position: absolute;
+      width: 22px;
+      background-color: $accent;
+      height: 2px;
+      transform: translate(50%, 0);
+      transition: all 0.3s;
+    }
+    &::after {
+      right: 50%;
+      top: 50%;
+      content: "";
+      position: absolute;
+      width: 22px;
+      background-color: $accent;
+      height: 2px;
+      transform: rotate(-90deg);
+      transition: all 0.5s;
+      transform: translate(50%, 0) rotate(-90deg);
+      transition: all 0.3s;
+    }
+
+    &.active {
+      &::before {
+        transform: translate(50%, -50%) rotate(45deg);
+      }
+      &::after {
+        transform: translate(50%, -50%) rotate(-45deg);
+      }
+    }
+  }
+
+  &__content {
+    max-height: 0px;
+
+    overflow: hidden;
+    transition: all 0.3s;
+    &.active {
+      margin-top: 20px;
+    }
+  }
+}
