@@ -1227,6 +1227,12 @@ body.lock {
   }
 }
 
+@media (max-width: 767px) {
+  .welcome__content {
+    padding-top: 0;
+  }
+}
+
 .welcome__par {
   margin-bottom: 43px;
 }

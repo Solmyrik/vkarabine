@@ -45,6 +45,9 @@
     @media (max-width: $tablet) {
       max-width: 600px;
     }
+    @media (max-width: $mobile) {
+      padding-top: 0;
+    }
   }
 
   &__par {
