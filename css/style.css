@@ -1752,7 +1752,7 @@ body.lock {
 
 .cards__item {
   background-color: #ffffff;
-  padding: 22px 16px;
+  padding: 22px 16px 16px 16px;
   border-radius: 10px;
   cursor: pointer;
   display: -webkit-box;
@@ -1802,8 +1802,6 @@ body.lock {
 .cards__icon img {
   width: 100%;
   height: 140px;
-  -o-object-fit: cover;
-     object-fit: cover;
   border-radius: 10px;
 }
 
@@ -3261,14 +3259,22 @@ body.lock {
 
 .certificates__left {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 308px;
-          flex: 0 1 308px;
+      -ms-flex: 0 1 482px;
+          flex: 0 1 482px;
 }
 
 .certificates__left_2 {
   -webkit-box-flex: 0;
       -ms-flex: 0 1 492px;
           flex: 0 1 492px;
+}
+
+@media (max-width: 1360px) {
+  .certificates__left {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 308px;
+            flex: 0 1 308px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -3301,10 +3307,28 @@ body.lock {
   }
 }
 
+.certificates__btn {
+  width: 318px;
+}
+
+@media (max-width: 1360px) {
+  .certificates__btn {
+    width: 100%;
+  }
+}
+
 .certificates__right {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 492px;
-          flex: 0 1 492px;
+      -ms-flex: 0 0 650px;
+          flex: 0 0 650px;
+}
+
+@media (max-width: 1360px) {
+  .certificates__right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 492px;
+            flex: 0 0 492px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -3424,7 +3448,18 @@ body.lock {
 }
 
 .faq__content_bottom p {
-  margin-bottom: 20px;
+  margin-bottom: 33px;
+}
+
+.faq__content p {
+  max-width: 449px;
+  line-height: 130%;
+}
+
+@media (max-width: 1360px) {
+  .faq__content p {
+    max-width: 100%;
+  }
 }
 
 .faq__content span {

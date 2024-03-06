@@ -9,9 +9,12 @@
   }
 
   &__left {
-    flex: 0 1 308px;
+    flex: 0 1 482px;
     &_2 {
       flex: 0 1 492px;
+    }
+    @media (max-width: $laptop) {
+      flex: 0 1 308px;
     }
     @media (max-width: $tablet) {
       flex: auto;
@@ -33,10 +36,17 @@
   }
 
   &__btn {
+    width: 318px;
+    @media (max-width: $laptop) {
+      width: 100%;
+    }
   }
 
   &__right {
-    flex: 0 1 492px;
+    flex: 0 0 650px;
+    @media (max-width: $laptop) {
+      flex: 0 0 492px;
+    }
     @media (max-width: $tablet) {
       flex: auto;
     }
@@ -131,7 +141,14 @@
     }
     &_bottom {
       p {
-        margin-bottom: 20px;
+        margin-bottom: 33px;
+      }
+    }
+    p {
+      max-width: 449px;
+      line-height: 130%;
+      @media (max-width: $laptop) {
+        max-width: 100%;
       }
     }
 
