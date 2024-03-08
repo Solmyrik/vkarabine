@@ -1,0 +1,127 @@
+.consultation {
+  @media (max-width: $laptop) {
+    background-color: $light-blue;
+    padding: 30px 0px;
+  }
+  &__decor {
+    position: absolute;
+    width: 450px;
+    bottom: 0;
+    left: 3px;
+    img {
+      width: 100%;
+    }
+    @media (max-width: $laptop) {
+      width: 350px;
+      left: 70px;
+      bottom: -30px;
+    }
+    @media (max-width: $tablet) {
+      display: none;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+    display: flex;
+    gap: 34px;
+    background-color: $light-blue;
+    border-radius: 10px;
+    padding: 44px;
+    @media (max-width: $laptop) {
+      padding: 0;
+    }
+    @media (max-width: $tablet) {
+      display: block;
+    }
+  }
+
+  &__left {
+    flex: 0 1 50%;
+    @media (max-width: $tablet) {
+      flex: auto;
+    }
+  }
+
+  &__title {
+    margin-bottom: 20px;
+    font-family: "Made";
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 130%;
+    color: $black;
+    text-transform: uppercase;
+  }
+
+  &__par {
+    padding-right: 50px;
+    margin-bottom: 120px;
+    @media (max-width: $tablet) {
+      margin-bottom: 30px;
+      padding: 0;
+    }
+  }
+
+  &__right {
+    flex: 0 1 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__input {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: $white;
+    padding: 12px 20px 12px 20px;
+    color: rgb(170, 177, 183);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 120%;
+    border: 1px solid $white;
+    cursor: pointer;
+    transition: border 0.3s;
+    &:hover,
+    &:active {
+      border: 1px solid rgb(170, 177, 183);
+    }
+    @media (max-width: $tablet) {
+      border: 1px solid rgb(170, 177, 183);
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    height: 75px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: $white;
+    padding: 12px 20px 12px 20px;
+    color: rgb(170, 177, 183);
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 120%;
+    border: 1px solid $white;
+    cursor: pointer;
+    transition: border 0.3s;
+    &:hover,
+    &:active {
+      border: 1px solid rgb(170, 177, 183);
+    }
+    @media (max-width: $tablet) {
+      border: 1px solid rgb(170, 177, 183);
+    }
+  }
+
+  &__check {
+    margin-bottom: 40px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 110%;
+  }
+
+  &__btn {
+  }
+}

@@ -106,6 +106,7 @@ mark {
 }
 
 ._btn {
+  cursor: pointer;
   width: 100%;
   height: 43px;
   display: flex;
@@ -193,4 +194,89 @@ mark {
       }
     }
   }
+}
+
+._pc {
+  display: flex;
+  @media (max-width: $laptop) {
+    display: none;
+  }
+}
+._laptop {
+  display: none;
+  @media (max-width: $laptop) {
+    display: flex;
+  }
+}
+.none {
+  display: none;
+}
+._label-wallet {
+  align-items: center;
+  display: inline-flex;
+  margin: 0;
+  position: relative;
+  a {
+    color: $blue;
+  }
+  @media (max-width: $mobile) {
+    align-items: start;
+  }
+}
+._checkbox-wallet {
+  display: none;
+}
+._fake-wallet {
+  display: inline-block;
+  flex: 0 0 18px;
+  height: 18px;
+  border-radius: 3px;
+  position: relative;
+  cursor: pointer;
+  border: 1.5px solid rgb(170, 177, 183);
+  &:hover {
+    border: 1.5px solid $accent;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+    display: block;
+    background-color: $accent;
+    top: -0.5px;
+    left: -0.5px;
+    width: 105%;
+    height: 105%;
+    transition: 0.3s;
+    opacity: 0;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    background-image: url("../img/input-checkbox.svg");
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 9px;
+    opacity: 0;
+  }
+}
+._checkbox-wallet:checked + ._fake-wallet::before {
+  opacity: 1;
+}
+._checkbox-wallet:checked + ._fake-wallet::after {
+  opacity: 1;
+}
+._checkbox-wallet:checked + ._fake-wallet {
+  border: 1.5px solid $accent;
+}
+._wallet-chectext {
+  margin-left: 7px;
+  font-size: 14px;
+  text-align: left;
 }

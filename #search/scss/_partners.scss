@@ -1,0 +1,34 @@
+.partners {
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__par {
+    width: 357px;
+    margin-bottom: 50px;
+    @media (max-width: $tablet) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__slider {
+    overflow: hidden;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: column;
+  }
+
+  &__slide {
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}

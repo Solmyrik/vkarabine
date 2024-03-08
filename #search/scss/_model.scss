@@ -236,6 +236,13 @@
       gap: 30px;
       margin-bottom: 40px;
     }
+
+    @media (max-width: $mobile) {
+      display: none;
+      &_mob {
+        display: flex;
+      }
+    }
   }
 
   &__btns {
@@ -339,4 +346,12 @@
 .swiper-wrapper {
 }
 .swiper-slide {
+}
+.item-model-hidden {
+  display: none;
+  @media (max-width: $mobile) {
+    display: block;
+    text-decoration: underline;
+    margin-top: -10px;
+  }
 }

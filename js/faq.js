@@ -17,3 +17,14 @@ if (faqItem1.length) {
     }
   }
 }
+
+const modelHidden = document.querySelectorAll(".item-model-hidden");
+
+if (modelHidden.length) {
+  modelHidden.forEach((item) => {
+    item.addEventListener("click", (e) => {
+      e.currentTarget.style.display = "none";
+      e.currentTarget.nextElementSibling.classList.remove("none");
+    });
+  });
+}

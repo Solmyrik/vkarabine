@@ -1,0 +1,59 @@
+.creation {
+  height: 434px;
+  background-color: #2452cc;
+  &_orange {
+    background-color: #e0913e;
+  }
+  @media (max-width: $laptop) {
+    height: 374px;
+  }
+  @media (max-width: $mobile) {
+    height: 266px;
+  }
+  &__container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__text {
+    color: rgb(230, 230, 230);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 130%;
+    max-width: 670px;
+    &_orange {
+      max-width: 816px;
+    }
+    @media (max-width: $laptop) {
+      max-width: 490px;
+      font-size: 22px;
+    }
+    @media (max-width: $mobile) {
+      font-size: 16px;
+    }
+  }
+
+  &__decor {
+    position: absolute;
+    width: 422.43px;
+    bottom: 0;
+    right: 0;
+    @media (max-width: $laptop) {
+      width: 327px;
+    }
+    @media (max-width: $tablet) {
+      right: -150px;
+      width: 422.43px;
+    }
+    @media (max-width: $mobile) {
+      display: none;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}

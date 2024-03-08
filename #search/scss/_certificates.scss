@@ -37,6 +37,9 @@
 
   &__btn {
     width: 318px;
+    &_2 {
+      width: 453px;
+    }
     @media (max-width: $laptop) {
       width: 100%;
     }
