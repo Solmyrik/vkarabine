@@ -3329,6 +3329,13 @@ body.lock {
   .item-model__text {
     display: none;
   }
+}
+
+.item-model__text_mob {
+  display: none;
+}
+
+@media (max-width: 767px) {
   .item-model__text_mob {
     display: -webkit-box;
     display: -ms-flexbox;

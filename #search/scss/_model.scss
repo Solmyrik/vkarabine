@@ -236,10 +236,14 @@
       gap: 30px;
       margin-bottom: 40px;
     }
-
     @media (max-width: $mobile) {
       display: none;
-      &_mob {
+    }
+
+    &_mob {
+      display: none;
+
+      @media (max-width: $mobile) {
         display: flex;
       }
     }
