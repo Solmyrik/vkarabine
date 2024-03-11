@@ -141,6 +141,7 @@ let lastPosition = window.pageYOffset;
 let maxPosition = 0;
 
 window.addEventListener("scroll", function () {
+  getPixelsOccupied();
   let currentPosition = window.pageYOffset;
 
   if (currentPosition > 1500) {
@@ -194,3 +195,26 @@ function feqHandler(e) {
     currentContent.style.maxHeight = 0;
   }
 }
+
+function getPixelsOccupied(elementId) {
+  let element = document.querySelector(".footer");
+
+  if (!element) {
+    console.error("Element not found");
+    return;
+  }
+
+  let boundingRect = element.getBoundingClientRect();
+
+  let heightInPixels = boundingRect.height;
+  let widthInPixels = boundingRect.width;
+  let topRelativeToViewport = boundingRect.top;
+  let bottomRelativeToViewport = boundingRect.bottom;
+
+  console.log("Height in pixels: ", heightInPixels);
+  console.log("Width in pixels: ", widthInPixels);
+  console.log("Top position relative to viewport: ", topRelativeToViewport);
+  console.log("Bottom position relative to viewport: ", bottomRelativeToViewport);
+}
+
+// Call the function with the id of the element you want to track
