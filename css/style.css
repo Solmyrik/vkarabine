@@ -1350,6 +1350,12 @@ body.lock {
           flex: 0 1 406px;
 }
 
+.welcome__content_4 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 427px;
+          flex: 0 1 427px;
+}
+
 @media (max-width: 992px) {
   .welcome__content {
     max-width: 600px;
@@ -1502,18 +1508,18 @@ body.lock {
   display: none !important;
 }
 
-.intro-img {
+.intro-img_2 {
   width: 100%;
   height: 722px;
 }
 
-.intro-img iframe {
+.intro-img_2 iframe {
   width: 100%;
   height: 100%;
 }
 
 @media (max-width: 1360px) {
-  .intro-img {
+  .intro-img_2 {
     height: 560px;
     width: 100vw;
     -webkit-transform: translate(-15px, 0);
@@ -1522,13 +1528,13 @@ body.lock {
 }
 
 @media (max-width: 992px) {
-  .intro-img {
+  .intro-img_2 {
     height: 407px;
   }
 }
 
 @media (max-width: 767px) {
-  .intro-img {
+  .intro-img_2 {
     height: 206px;
   }
 }
@@ -2070,6 +2076,10 @@ body.lock {
   text-align: center;
   width: 100%;
   display: none;
+}
+
+.cards-pagination-bottom_1 {
+  display: block;
 }
 
 @media (max-width: 1360px) {
@@ -3010,6 +3020,7 @@ body.lock {
 
 .model__triggers {
   position: absolute;
+  pointer-events: none;
   left: 350px;
   height: 100%;
 }
@@ -3029,6 +3040,7 @@ body.lock {
 }
 
 .model__sticky {
+  pointer-events: all;
   position: -webkit-sticky;
   position: sticky;
   z-index: 20;
@@ -3055,6 +3067,7 @@ body.lock {
 .model__trigger {
   top: 0;
   cursor: pointer;
+  text-transform: uppercase;
   width: 159px;
   height: 43px;
   display: -webkit-box;
@@ -3099,6 +3112,16 @@ body.lock {
   gap: 70px;
 }
 
+.model__body_1 {
+  gap: 140px;
+}
+
+@media (max-width: 1360px) {
+  .model__body_1 {
+    gap: 70px;
+  }
+}
+
 .item-model {
   padding: 30px;
   border-radius: 10px;
@@ -3132,6 +3155,10 @@ body.lock {
           justify-content: space-between;
   gap: 20px;
   margin-bottom: 40px;
+}
+
+.item-model__top_1 {
+  margin-bottom: 0;
 }
 
 @media (max-width: 992px) {
@@ -3318,6 +3345,13 @@ body.lock {
   margin-right: 3px;
 }
 
+.item-model__text_2 {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  margin-bottom: 50px;
+}
+
 @media (max-width: 992px) {
   .item-model__text {
     gap: 30px;
@@ -3483,6 +3517,23 @@ body.lock {
     display: block;
     text-decoration: underline;
     margin-top: -10px;
+  }
+}
+
+.item-model__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 50px;
+}
+
+@media (max-width: 767px) {
+  .item-model__header {
+    gap: 40px;
   }
 }
 
