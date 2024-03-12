@@ -25,9 +25,35 @@
     padding: 30px;
     border-radius: 10px;
     flex: 0 1 calc(54% - 10px);
+
     &:first-child,
     &:last-child {
       flex: 0 1 calc(46% - 10px);
+      @media (max-width: $laptop) {
+        flex: 0 1 calc(50% - 10px);
+      }
+    }
+    &_w {
+      background-color: $white;
+      flex: 0 1 calc(43% - 10px);
+      &:first-child {
+        flex: 0 1 calc(57% - 10px);
+        @media (max-width: $laptop) {
+          flex: 0 1 calc(50% - 10px);
+        }
+      }
+      &:last-child {
+        flex: 0 1 calc(61% - 10px);
+        @media (max-width: $laptop) {
+          flex: 0 1 calc(50% - 10px);
+        }
+      }
+      &:nth-child(3) {
+        flex: 0 1 calc(39% - 10px);
+        @media (max-width: $laptop) {
+          flex: 0 1 calc(50% - 10px);
+        }
+      }
       @media (max-width: $laptop) {
         flex: 0 1 calc(50% - 10px);
       }

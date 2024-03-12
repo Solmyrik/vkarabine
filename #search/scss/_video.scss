@@ -1,0 +1,20 @@
+.video {
+  margin-top: 40px;
+  width: 100%;
+  border-radius: 10px;
+  @media (max-width: $laptop) {
+    margin-top: 70px;
+    width: 100vw;
+    transform: translate(-15px, 0);
+  }
+  @media (max-width: $mobile) {
+    margin-top: 40px;
+  }
+  &__video {
+    width: 100%;
+    border-radius: 10px;
+    @media (max-width: $laptop) {
+      border-radius: 0;
+    }
+  }
+}
