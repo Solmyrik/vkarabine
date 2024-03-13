@@ -4030,9 +4030,16 @@ body.lock {
   right: 0;
 }
 
+.creation__decor_2 {
+  width: 502.43px;
+}
+
 @media (max-width: 1360px) {
   .creation__decor {
     width: 327px;
+  }
+  .creation__decor_2 {
+    width: 401px;
   }
 }
 

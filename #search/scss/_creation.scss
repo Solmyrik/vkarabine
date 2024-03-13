@@ -42,8 +42,14 @@
     width: 422.43px;
     bottom: 0;
     right: 0;
+    &_2 {
+      width: 502.43px;
+    }
     @media (max-width: $laptop) {
       width: 327px;
+      &_2 {
+        width: 401px;
+      }
     }
     @media (max-width: $tablet) {
       right: -150px;
