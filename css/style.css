@@ -4190,7 +4190,7 @@ body.lock {
 }
 
 .device__wrapper {
-  gap: 90px;
+  gap: 80px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
