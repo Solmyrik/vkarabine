@@ -2004,6 +2004,12 @@ body.lock {
   visibility: visible;
 }
 
+@media (max-width: 767px) {
+  .cards__item {
+    width: 236px;
+  }
+}
+
 .cards__hit {
   position: absolute;
   top: 10px;

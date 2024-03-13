@@ -171,6 +171,9 @@
         visibility: visible;
       }
     }
+    @media (max-width: $mobile) {
+      width: 236px;
+    }
   }
 
   &__hit {

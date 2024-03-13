@@ -87,7 +87,7 @@ if (cardsSliderBottom3Container) {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.5,
+        slidesPerView: "auto",
         spaceBetween: 15,
       },
       500: {
