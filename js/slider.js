@@ -53,7 +53,7 @@ const cardsSliderBottom1 = new Swiper(".cards__bottom-1", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.5,
+      slidesPerView: "auto",
       spaceBetween: 15,
     },
     768: {
@@ -76,7 +76,7 @@ const cardsSliderBottom2 = new Swiper(".cards__bottom-2", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.5,
+      slidesPerView: "auto",
       spaceBetween: 15,
     },
     500: {
@@ -99,7 +99,7 @@ const cardsSliderBottom3 = new Swiper(".cards__bottom-3", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.5,
+      slidesPerView: "auto",
       spaceBetween: 15,
     },
     500: {
