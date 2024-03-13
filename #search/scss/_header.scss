@@ -131,7 +131,8 @@
     display: none;
   }
   &.scroll {
-    transform: translate(0, -22px);
+    // transform: translate(0, -22px);
+    transform: translate(0, -55px);
     @media (max-width: 1360px) {
       transform: translate(0, -70px);
     }
