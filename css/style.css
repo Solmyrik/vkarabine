@@ -3119,7 +3119,7 @@ body.lock {
   position: -webkit-sticky;
   position: sticky;
   z-index: 21;
-  top: 32px;
+  top: 16px;
   height: 60px;
 }
 
@@ -3180,7 +3180,7 @@ body.lock {
   pointer-events: all;
   position: -webkit-sticky;
   position: sticky;
-  top: 32px;
+  top: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

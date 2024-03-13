@@ -37,7 +37,7 @@
   &__title {
     position: sticky;
     z-index: 21;
-    top: 32px;
+    top: 16px;
     height: 60px;
     @media (max-width: $laptop) {
       display: none;
@@ -82,7 +82,7 @@
     pointer-events: all;
     position: sticky;
     //  position: sticky;
-    top: 32px;
+    top: 16px;
     display: flex;
     height: 43px;
     gap: 20px;
