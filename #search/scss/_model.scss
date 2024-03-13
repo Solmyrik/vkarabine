@@ -2,9 +2,17 @@
   position: relative;
   background-color: #f6f7fa;
   z-index: 100;
+
   &__container {
     position: relative;
     overflow: visible;
+    padding-top: 110px;
+    @media (max-width: $laptop) {
+      padding-top: 181px;
+    }
+    @media (max-width: $laptop) {
+      padding-top: 0;
+    }
   }
 
   &__top {
@@ -14,11 +22,37 @@
     @media (max-width: $laptop) {
       margin-bottom: 0;
     }
+
+    position: absolute;
+    pointer-events: none;
+    left: 15px;
+    top: 0;
+    height: 100%;
+    @media (max-width: $mobile) {
+      left: 0;
+    }
+    // display: none;
   }
 
   &__title {
+    position: sticky;
+    z-index: 21;
+    top: 32px;
+    height: 60px;
     @media (max-width: $laptop) {
+      display: none;
       margin-bottom: 121px;
+      position: relative;
+    }
+    @media (max-width: $mobile) {
+      margin-bottom: 150px;
+    }
+  }
+  &__title-mob {
+    display: none;
+    @media (max-width: $laptop) {
+      display: block;
+      margin-bottom: 120px;
     }
     @media (max-width: $mobile) {
       margin-bottom: 150px;
@@ -26,12 +60,16 @@
   }
 
   &__triggers {
-    position: absolute;
-    pointer-events: none;
-    left: 350px;
-    height: 100%;
+    // position: absolute;
+    // pointer-events: none;
+    // left: 350px;
+    // height: 100%;
+    display: flex;
+    position: relative;
+    z-index: 20;
+
     @media (max-width: $laptop) {
-      left: 15px;
+      left: 0px;
       top: 98px;
     }
     @media (max-width: $mobile) {
@@ -43,21 +81,49 @@
   &__sticky {
     pointer-events: all;
     position: sticky;
-    z-index: 20;
     //  position: sticky;
     top: 32px;
     display: flex;
     height: 43px;
     gap: 20px;
+    @media (max-width: $laptop) {
+      left: 0;
+    }
     @media (max-width: $mobile) {
+      width: calc(100vw - 15px);
       display: flex;
       flex-wrap: wrap;
+      height: 101px;
       gap: 15px;
       margin-right: 5px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: #f6f7fa;
+      // background-color: $black;
+      height: 77px;
+      width: 1320px;
+      top: 50%;
+      left: -334px;
+      transform: translate(0, -50%);
+      z-index: 19;
+      @media (max-width: $laptop) {
+        left: -15px;
+        width: 100vw;
+      }
+      @media (max-width: $tablet) {
+        left: -10px;
+      }
+      @media (max-width: $mobile) {
+        height: 141px;
+      }
     }
   }
 
   &__trigger {
+    position: relative;
+    z-index: 20;
     top: 0;
     cursor: pointer;
     text-transform: uppercase;
