@@ -33,6 +33,37 @@
         flex: 0 1 calc(50% - 10px);
       }
     }
+    &_f {
+      flex: 0 1 calc(43% - 10px);
+      &:first-child {
+        flex: 0 1 calc(51% - 10px);
+        @media (max-width: $laptop) {
+          flex: 0 1 calc(50% - 10px);
+        }
+      }
+      &:nth-child(2) {
+        flex: 0 1 calc(49% - 10px);
+        @media (max-width: $laptop) {
+          flex: 0 1 calc(50% - 10px);
+        }
+      }
+
+      &:nth-child(3) {
+        flex: 0 1 calc(60% - 10px);
+        @media (max-width: $laptop) {
+          flex: 0 1 calc(50% - 10px);
+        }
+      }
+      &:last-child {
+        flex: 0 1 calc(40% - 10px);
+        @media (max-width: $laptop) {
+          flex: 0 1 calc(50% - 10px);
+        }
+      }
+      @media (max-width: $laptop) {
+        flex: 0 1 calc(50% - 10px);
+      }
+    }
     &_w {
       background-color: $white;
       flex: 0 1 calc(43% - 10px);

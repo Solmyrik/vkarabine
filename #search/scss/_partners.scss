@@ -9,6 +9,9 @@
   &__par {
     width: 357px;
     margin-bottom: 50px;
+    &_2 {
+      width: 393px;
+    }
     @media (max-width: $tablet) {
       width: 100%;
       margin-bottom: 40px;

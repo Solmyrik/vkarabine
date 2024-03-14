@@ -18,6 +18,12 @@
 
   &__content {
     flex: 0 1 367px;
+    &_3 {
+      flex: 0 1 301px;
+    }
+    &_4 {
+      flex: 0 1 473px;
+    }
     &_2 {
       flex: 0 1 395px;
       .equipment__text {
@@ -53,6 +59,9 @@
   }
 
   &__text {
+    &_4 {
+      max-width: 455px;
+    }
     @media (max-width: $tablet) {
       max-width: 570px;
     }

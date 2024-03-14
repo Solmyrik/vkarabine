@@ -13,6 +13,12 @@
     @media (max-width: $laptop) {
       padding-top: 0;
     }
+    &_m {
+      padding-top: 0;
+      @media (max-width: $laptop) {
+        padding-top: 0;
+      }
+    }
   }
 
   &__top {
@@ -56,6 +62,11 @@
     }
     @media (max-width: $mobile) {
       margin-bottom: 150px;
+    }
+    &_q {
+      @media (max-width: $mobile) {
+        margin-bottom: 93px;
+      }
     }
   }
 
@@ -103,9 +114,9 @@
       background-color: #f6f7fa;
       // background-color: $black;
       height: 77px;
-      width: 1320px;
+      width: 1340px;
       top: 50%;
-      left: -334px;
+      left: -353px;
       transform: translate(0, -50%);
       z-index: 19;
       @media (max-width: $laptop) {
@@ -117,6 +128,12 @@
       }
       @media (max-width: $mobile) {
         height: 141px;
+      }
+    }
+    &_q {
+      height: 43px;
+      &::before {
+        height: 77px;
       }
     }
   }
@@ -409,6 +426,32 @@
       @media (max-width: $tablet) {
         border-left: 1px solid rgb(170, 177, 183);
         border-radius: 0px 0px 10px 10px;
+      }
+    }
+    &_m {
+      &:nth-child(3) {
+        border-radius: 0;
+      }
+      &:nth-child(4) {
+        border-radius: 0;
+      }
+      &:nth-child(5) {
+        border-right: 1px solid rgb(170, 177, 183);
+        border-bottom: 1px solid rgb(170, 177, 183);
+        border-left: 1px solid rgb(170, 177, 183);
+        border-radius: 0px 0px 0px 10px;
+        @media (max-width: $tablet) {
+          border-radius: 0px 0px 0px 0px;
+        }
+      }
+      &:nth-child(6) {
+        border-right: 1px solid rgb(170, 177, 183);
+        border-bottom: 1px solid rgb(170, 177, 183);
+        border-radius: 0px 0px 10px 0px;
+        @media (max-width: $tablet) {
+          border-left: 1px solid rgb(170, 177, 183);
+          border-radius: 0px 0px 10px 10px;
+        }
       }
     }
     @media (max-width: $mobile) {

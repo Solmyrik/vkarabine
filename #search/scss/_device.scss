@@ -19,6 +19,14 @@
     @media (max-width: $mobile) {
       padding: 30px 0px;
     }
+    &_q {
+      @media (max-width: $mobile) {
+        padding: 30px 10px;
+        width: 100vw;
+        transform: translate(-10px, 0);
+        border-radius: 0;
+      }
+    }
   }
 
   &__left {
@@ -90,11 +98,17 @@
     @media (max-width: $laptop) {
       padding: 30px 0px;
     }
+    @media (max-width: $mobile) {
+      padding: 0px;
+    }
     video {
       width: 100%;
       @media (max-width: $laptop) {
         width: 172px;
         border-radius: 0;
+      }
+      @media (max-width: $mobile) {
+        width: 192px;
       }
     }
   }
@@ -113,6 +127,10 @@
     justify-content: center;
     cursor: pointer;
     transition: all 0.3s;
+    img {
+      width: 17px;
+      height: 19px;
+    }
     img {
       padding-left: 4px;
     }
@@ -139,16 +157,16 @@
   }
 
   &__par {
-    margin-bottom: 50px;
-    @media (max-width: $tablet) {
-      margin-bottom: 40px;
-    }
   }
 
   &__btns {
     display: flex;
     margin-bottom: 50px;
     gap: 30px;
+    margin-top: 50px;
+    @media (max-width: $tablet) {
+      margin-top: 40px;
+    }
     @media (max-width: $tablet) {
       gap: 20px;
     }
