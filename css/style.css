@@ -1431,6 +1431,16 @@ body.lock {
   color: #0234c7;
 }
 
+.welcome__par_2 {
+  margin-bottom: 69px;
+}
+
+@media (max-width: 1360px) {
+  .welcome__par_2 {
+    margin-bottom: 43px;
+  }
+}
+
 @media (max-width: 992px) {
   .welcome__btn {
     width: 308px;
@@ -4637,6 +4647,22 @@ body.lock {
   padding: 30px;
 }
 
+.device__videos_you {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: inherit;
+  padding: 0px;
+}
+
+.device__videos_you .device__youtube {
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 320px;
+}
+
 @media (max-width: 1360px) {
   .device__videos {
     background-color: inherit;
@@ -4696,6 +4722,22 @@ body.lock {
   .device__video video {
     width: 192px;
   }
+}
+
+.device__youtube {
+  width: 100%;
+  height: 260px;
+}
+
+@media (max-width: 767px) {
+  .device__youtube {
+    height: 340px;
+  }
+}
+
+.device__youtube iframe {
+  width: 100%;
+  height: 100%;
 }
 
 .device__play {
