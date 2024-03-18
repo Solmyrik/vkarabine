@@ -235,6 +235,12 @@
     }
   }
 
+  &__yandex {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+
   &__slider-1 {
   }
 
@@ -277,6 +283,7 @@
   }
 
   &__slide {
+    position: relative;
     height: 100%;
     width: 100%;
     background-color: $white;
@@ -289,6 +296,22 @@
         border-radius: 0;
       }
     }
+  }
+
+  &__label {
+    padding: 10px 15px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: 1px solid rgb(2, 52, 199);
+    border-radius: 10px;
+    /* white */
+    background: rgb(255, 255, 255);
+    color: rgb(36, 82, 204);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 120%;
   }
 
   &__right {

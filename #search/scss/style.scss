@@ -3,6 +3,12 @@
 html {
   scroll-behavior: smooth;
   height: 100%;
+  &._lock {
+    overflow: hidden;
+  }
+  &.lock {
+    overflow: hidden;
+  }
 }
 a {
   color: $black;
@@ -58,6 +64,7 @@ body {
 @import "_video";
 @import "_device";
 @import "_why";
+@import "_popup";
 // @import '_carrousel';
 // @import '_popup';
 // @import '_aboutus';

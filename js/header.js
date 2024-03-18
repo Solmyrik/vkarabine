@@ -218,3 +218,23 @@ function getPixelsOccupied(elementId) {
 }
 
 // Call the function with the id of the element you want to track
+
+//cookie
+const cookie = document.querySelector(".cookie");
+const cookieBtn = document.querySelector(".cookie__buttons");
+const valueCookie = localStorage.getItem("cookie");
+
+if (!valueCookie) {
+  cookie.classList.add("active");
+}
+
+cookieBtn.addEventListener("click", (e) => {
+  if (e.target.className.includes("_btn")) {
+    hiddenCookie();
+  }
+});
+
+const hiddenCookie = () => {
+  cookie.classList.remove("active");
+  localStorage.setItem("cookie", true);
+};

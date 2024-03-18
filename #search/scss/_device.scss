@@ -263,6 +263,20 @@
         justify-content: space-between;
       }
     }
+    &_min {
+      border-radius: 10px !important;
+      .device__key {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 120%;
+        font-family: "Made";
+        text-transform: uppercase;
+      }
+      .device__value {
+        color: $accent;
+        font-weight: 500;
+      }
+    }
   }
 
   &__key-big {
