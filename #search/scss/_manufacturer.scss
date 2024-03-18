@@ -1,0 +1,91 @@
+.manufacturer {
+  &__container {
+    overflow: hidden;
+  }
+
+  &__title {
+    margin-bottom: 49px;
+    max-width: 540px;
+  }
+
+  &__body {
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+    @media (max-width: $laptop) {
+      gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, 308px);
+      grid-template-rows: repeat(4, 1fr);
+    }
+    @media (max-width: $mobile) {
+      grid-template-columns: repeat(8, 200px);
+      grid-template-rows: repeat(1, 200px);
+      gap: 15px;
+      overflow-x: auto;
+      overflow-y: hidden;
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+    height: 315px;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 22px;
+    position: relative;
+    &:hover {
+      .manufacturer__icon {
+        position: absolute;
+        transform: translate(0, 0%);
+        left: 0;
+        top: 0%;
+        transform: scale(0.5) translate(40px, 60px);
+        width: 0%;
+        img {
+          position: absolute;
+
+          left: 0px;
+          top: 0px;
+        }
+      }
+      .manufacturer__text {
+        opacity: 1;
+      }
+    }
+    @media (max-width: $mobile) {
+      height: 200px;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translate(-20px, -50%);
+    transition: all 0.4s;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    img {
+      position: absolute;
+      transform: translate(0, -50%);
+      transition: all 0.4s;
+      @media (max-width: $mobile) {
+        width: 80%;
+      }
+    }
+  }
+
+  &__text {
+    padding-top: 63px;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+}

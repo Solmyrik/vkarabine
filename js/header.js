@@ -228,11 +228,13 @@ if (!valueCookie) {
   cookie.classList.add("active");
 }
 
-cookieBtn.addEventListener("click", (e) => {
-  if (e.target.className.includes("_btn")) {
-    hiddenCookie();
-  }
-});
+if (cookieBtn) {
+  cookieBtn.addEventListener("click", (e) => {
+    if (e.target.className.includes("_btn")) {
+      hiddenCookie();
+    }
+  });
+}
 
 const hiddenCookie = () => {
   cookie.classList.remove("active");

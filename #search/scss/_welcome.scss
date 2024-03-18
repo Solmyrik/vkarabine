@@ -80,6 +80,15 @@
     &_6 {
       flex: 0 1 335px;
     }
+    &_7 {
+      flex: 0 1 315px;
+      display: flex;
+      flex-direction: column;
+      gap: 54px;
+      @media (max-width: $laptop) {
+        display: block;
+      }
+    }
     @media (max-width: $tablet) {
       max-width: 600px;
     }

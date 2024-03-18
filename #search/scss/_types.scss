@@ -1,0 +1,89 @@
+.types {
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 49px;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    row-gap: 30px;
+    @media (max-width: $laptop) {
+      gap: 30px;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+    }
+    @media (max-width: $tablet) {
+      grid-template-columns: repeat(2, 308px);
+      grid-template-rows: repeat(4, 1fr);
+    }
+    @media (max-width: $mobile) {
+      gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+    }
+  }
+
+  &__item {
+    background-color: $white;
+    border-radius: 10px;
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    &:hover {
+      .types__btn {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+    @media (max-width: $mobile) {
+      padding: 20px 10px;
+    }
+  }
+
+  &__icon {
+    text-align: center;
+    padding: 21px;
+    margin-bottom: 10px;
+    @media (max-width: $mobile) {
+      padding-top: 0;
+      img {
+        width: 70px;
+      }
+    }
+  }
+
+  &__name {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Made";
+    flex: 1 1 auto;
+    margin-bottom: 15px;
+    @media (max-width: $mobile) {
+      text-transform: none;
+      font-size: 15px;
+      max-width: 135px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__btn {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+    @media (max-width: $laptop) {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
