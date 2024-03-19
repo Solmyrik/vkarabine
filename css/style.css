@@ -4481,6 +4481,10 @@ body.lock {
   max-width: 670px;
 }
 
+.creation__text_761 {
+  max-width: 761px;
+}
+
 @media (max-width: 1360px) {
   .creation__text {
     max-width: 490px;
@@ -5563,6 +5567,10 @@ body::after {
   text-align: center;
   padding: 21px;
   margin-bottom: 10px;
+}
+
+.types__icon img {
+  width: 130px;
 }
 
 @media (max-width: 767px) {
