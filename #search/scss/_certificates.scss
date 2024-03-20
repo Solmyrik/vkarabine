@@ -33,6 +33,9 @@
     @media (max-width: $mobile) {
       margin-bottom: 40px;
     }
+    &_2 {
+      max-width: 314px;
+    }
     &_5 {
       max-width: 482px;
       margin-bottom: 70px;
@@ -91,6 +94,12 @@
     @media (max-width: $mobile) {
       padding: 30px 10px;
     }
+    &_m {
+      @media (max-width: $mobile) {
+        width: 100vw;
+        transform: translate(-10px, 0);
+      }
+    }
   }
 
   &__label {
@@ -101,6 +110,12 @@
     position: relative;
     @media (max-width: $mobile) {
       padding-right: 70px;
+    }
+    &_b {
+      font-family: Jost;
+      font-size: 18px;
+      font-weight: 500;
+      color: $black;
     }
   }
 
@@ -193,4 +208,10 @@
       }
     }
   }
+}
+.faq-label_b {
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 500;
+  color: $black;
 }

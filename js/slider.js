@@ -113,3 +113,28 @@ const cardsSliderBottom3 = new Swiper(".cards__bottom-3", {
     },
   },
 });
+
+const teamSliderContainer = document.querySelector(".team__slider");
+
+if (teamSliderContainer) {
+  const teamSlider = new Swiper(".team__slider", {
+    slidesPerView: 5,
+    spaceBetween: 30,
+    pagination: {
+      el: ".team-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: "auto",
+        spaceBetween: 30,
+      },
+      993: {
+        slidesPerView: 3.9,
+      },
+      1361: {
+        slidesPerView: 5,
+      },
+    },
+  });
+}
