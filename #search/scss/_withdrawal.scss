@@ -1,0 +1,34 @@
+.withdrawal {
+  padding-top: 60px;
+  @media (max-width: $laptop) {
+    padding-top: 50px;
+  }
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+  }
+  @media (max-width: $tablet) {
+    padding-top: 30px;
+  }
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 50px;
+    @media (max-width: $tablet) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__column {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+      @media (max-width: $tablet) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  &__name {
+    margin-bottom: 25px;
+  }
+}

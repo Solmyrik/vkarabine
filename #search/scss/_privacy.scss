@@ -1,0 +1,35 @@
+.privacy {
+  padding-top: 60px;
+  @media (max-width: $laptop) {
+    padding-top: 50px;
+  }
+  @media (max-width: $tablet) {
+    padding-top: 40px;
+  }
+  @media (max-width: $tablet) {
+    padding-top: 30px;
+  }
+  &__container {
+  }
+
+  &__title {
+    margin-bottom: 65px;
+    @media (max-width: $tablet) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: $tablet) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: $tablet) {
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+      font-family: "Made";
+    }
+  }
+
+  &__par {
+    margin-bottom: 25px;
+    color: $black;
+  }
+}

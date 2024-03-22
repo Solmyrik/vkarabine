@@ -1,0 +1,81 @@
+.credit {
+  background-color: $blue;
+  &__container {
+  }
+
+  &__body {
+    padding: 100px 0px;
+    display: flex;
+    gap: 27px;
+    @media (max-width: $laptop) {
+      gap: 140px;
+    }
+    @media (max-width: $tablet) {
+      flex-direction: column;
+      gap: 40px;
+    }
+    @media (max-width: $mobile) {
+      padding: 70px 0px;
+    }
+  }
+
+  &__left {
+    flex: 0 1 50%;
+    color: rgb(255, 255, 255);
+    font-family: Inter;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: left;
+    @media (max-width: $laptop) {
+      color: rgb(230, 230, 230);
+      font-family: Inter;
+      font-size: 22px;
+      font-weight: 400;
+      line-height: 130%;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    @media (max-width: $mobile) {
+      font-size: 16px;
+    }
+  }
+
+  &__right {
+    flex: 0 1 50%;
+    display: flex;
+    gap: 14px;
+
+    @media (max-width: $laptop) {
+      flex: 0 1 40%;
+      flex-wrap: wrap;
+    }
+    @media (max-width: $tablet) {
+      max-width: 350px;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
+    }
+    @media (max-width: $laptop) {
+      &:nth-child(1) {
+        width: 127px;
+      }
+      &:nth-child(2) {
+        width: 127px;
+      }
+      &:nth-child(3) {
+        width: 100px;
+      }
+      &:nth-child(3) {
+        width: 100px;
+      }
+      &:nth-child(4) {
+        width: 220px;
+      }
+    }
+  }
+}
