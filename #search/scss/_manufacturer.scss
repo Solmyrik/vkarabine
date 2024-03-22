@@ -61,6 +61,7 @@
     }
     @media (max-width: $mobile) {
       height: 200px;
+      pointer-events: none;
     }
   }
 
@@ -69,14 +70,14 @@
     top: 50%;
     text-align: center;
     transform: translate(-20px, -50%);
-    transition: all 0.4s;
+
     display: flex;
     justify-content: center;
     width: 100%;
     img {
       position: absolute;
       transform: translate(0, -50%);
-      transition: all 0.4s;
+
       @media (max-width: $mobile) {
         width: 80%;
       }
@@ -86,6 +87,5 @@
   &__text {
     padding-top: 63px;
     opacity: 0;
-    transition: all 0.4s;
   }
 }
