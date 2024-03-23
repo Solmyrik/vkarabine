@@ -90,3 +90,13 @@ body {
 // @import '_work';
 // @import '_textile';
 // @import '_lol';
+
+._anim {
+  opacity: 0;
+  transition: all 1s;
+}
+._anim {
+  &._active {
+    opacity: 1;
+  }
+}
